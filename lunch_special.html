@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dado Tea Lunch Special</title>
+	<link rel="stylesheet" href="lunch_special.css">
+</head>
+<body>
+	<h1>Dado Tea Lunch Special</h1>
+	<div id="hours">
+		<p>Monday - Friday<br>11am - 3pm<br>$7.24</p>
+		<p>Includes sandwich, snack, and drink.</p>
+	</div>
+	<form action="http://morpheus.dce.harvard.edu/cgi-bin/echo.cgi" method="post">
+		<fieldset class="order information">
+			<legend>Order Information</legend>
+			<p>Name<br>
+				<input type="text" name="username" id="name"></p>
+				 <input name="where" id="here" value="Here" type="radio" checked="checked" />
+				 	<label for="here">Here</label><br>
+				 <input name="where" id="togo" value="togo" type="radio"/>
+				 	<label for="togo">To Go</label>
+		</fieldset> 
+	</form>
+</body>
+</html>
