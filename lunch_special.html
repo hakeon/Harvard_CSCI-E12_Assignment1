@@ -11,15 +11,142 @@
 		<p>Includes sandwich, snack, and drink.</p>
 	</div>
 	<form action="http://morpheus.dce.harvard.edu/cgi-bin/echo.cgi" method="post">
-		<fieldset class="order information">
+		<fieldset class="orderInformation">
 			<legend>Order Information</legend>
 			<p>Name<br>
 				<input type="text" name="username" id="name"></p>
-				 <input name="where" id="here" value="Here" type="radio" checked="checked" />
-				 	<label for="here">Here</label><br>
-				 <input name="where" id="togo" value="togo" type="radio"/>
-				 	<label for="togo">To Go</label>
-		</fieldset> 
+			<ul class="radio">
+				<li><input type="radio" checked="checked" name="where" id="here" value="here"/>
+					<label for="here">Here</label>
+				</li>
+				<li><input type="radio" name="where" id="toGo" value="toGo"/>
+					<label for="toGo">To Go</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="sandwiches">
+			<legend>Sandwiches</legend>
+			<p>Monday</p>
+			<ul class="radio">
+				<li><input type="radio" name="sandwich" id="pesto" value="pesto"/>
+					<label for="pesto">Pesto Tofu Salad</label>
+				</li>
+				<li><input type="radio" name="sandwich" id="chicken" value="chicken"/>
+					<label for="chicken">Chicken Salad</label>
+				</li>
+			</ul>
+			<p>Tuesday</p>
+			<ul class="radio">
+				<li><input type="radio" name="sandwich" id="greek" value="greek"/>
+					<label for="greek">Greek Salad Wrap</label>
+				</li>
+				<li><input type="radio" name="sandwich" id="tuna" value="tuna"/>
+					<label for="tuna">Tuna Salad</label>
+				</li>
+			</ul>
+			<p>Wednesday</p>
+			<ul class="radio">
+				<li><input type="radio" name="sandwich" id="hummus" value="hummus"/>
+					<label for="hummus">Hummus</label>
+				</li>
+				<li><input type="radio" name="sandwich" id="turkey" value="turkey"/>
+					<label for="turkey">Turkey</label>
+				</li>
+			</ul>
+			<p>Thursday</p>
+			<ul class="radio">
+				<li><input type="radio" name="sandwich" id="carrot" value="carrot"/>
+					<label for="carrot">Carrot-Ginger Wrap</label>
+				</li>
+				<li><input type="radio" name="sandwich" id="egg" value="egg"/>
+					<label for="egg">Egg Salad</label>
+				</li>
+			</ul>
+			<p>Friday</p>
+			<ul class="radio">
+				<li><input type="radio" name="sandwich" id="veggie" value="veggie"/>
+					<label for="veggie">Veggie</label>
+				</li>
+				<li><input type="radio" name="sandwich" id="tunaSalad" value="tuna"/>
+					<label for="tunaSalad">Tuna Salad</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="options">
+			<legend>Sandwich Options</legend>
+			<p>Breads</p>
+			<ul class="radio">
+				<li><input type="radio" name="bread" id="7" value="7"/>
+					<label for="7">7 Grain</label>
+				</li>
+				<li><input type="radio" checked="checked" name="bread" id="french" value="french"/>
+					<label for="french">French</label>
+				</li>
+				<li><input type="radio" name="bread" id="wheat" value="wheat"/>
+					<label for="wheat">Wheat</label>
+				</li>
+			</ul>
+			<p>Cheeses (add 50&#162;)</p>
+			<ul class="checkbox">
+				<li><input type="checkbox" checked="checked" name="cheese" id="none" value="none"/>
+					<label for="none">No Cheese</label>
+				</li>
+				<li><input type="checkbox" name="cheese" value="feta"/>
+					<label for="feta">Feta</label>
+				</li>
+				<li><input type="checkbox" name="cheese" value="mozz"/>
+					<label for="mozz">Fresh Mozzarella</label>
+				</li>
+				<li><input type="checkbox" name="cheese" id="swiss" value="swiss"/>
+					<label for="swiss">Swiss</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="snack/drink">
+			<legend>Snack and Drink</legend>
+			<p>Snacks</p>
+			<ul class="radio">
+				<li><input type="radio" name="snack" id="apple" value="apple"/>
+					<label for="apple">Apple</label>
+				</li>
+				<li><input type="radio" name="snack" id="banana" value="banana"/>
+					<label for="banana">Banana</label>
+				</li>
+				<li><input type="radio" name="snack" id="chip" value="chip"/>
+					<label for="chip">Potato Chip</label>
+				</li>
+			</ul>
+			<p>Drinks</p>
+			<select name="drink" >
+				<optgroup label="Black Tea">
+					<option>Hot Black Tea - Keemun</option>
+					<option>Hot Black Tea - Decaf Keemun</option>
+					<option>Iced Black Tea - Keemun</option>
+					<option>Iced Black Tea - Decaf Keemun </option>
+				</optgroup>
+				<optgroup label="Green Tea">
+					<option>Hot Green Tea - Sencha</option>
+					<option>Hot Green Tea - Decaf</option>
+					<option>Iced Green Tea - Sencha</option>
+					<option>Iced Green Tea - Decaf</option>
+				</optgroup>
+				<optgroup label="Coffee">
+					<option>Hot Coffee</option>
+					<option>Hot Decaf Coffee</option>
+					<option>Iced Coffee</option>
+					<option>Iced Decaf Coffee</option>
+				</optgroup>
+			</select>
+			<ul class="radio">
+				<li><input type="radio" name="regDrink" value="regDrink"/>
+					<label for="regDrink">Regular Drink</label>
+				</li>
+				<li><input type="radio" name="largeDrink" value="largeDrink"/>
+					<label for="largeDrink">Large Drink (add 50&#162;)</label>
+				</li>
+			</ul>
+		</fieldset>
+		<p><input type="submit" value="Place Order"/></p>
 	</form>
 </body>
 </html>
