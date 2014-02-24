@@ -1,14 +1,32 @@
 /*stylesheet for harvard_guide_dce.html*/
 
-a:link {
-	color:black;
-	text-decoration: blink;
+body {
+	font-family: Arial, sans-serif;
 }
 
-a:hover {
-	color: blue;
+h1, h2, h3, h4, h5, h6 {
+	color: #A41034;
+	text-transform: uppercase;
+}
+
+#subtitle {
+	color: black;
+}
+
+a:link, a:hover, a:visited, a:active {
+	color: #A41034;
+	text-decoration: none;
 }
 
 ul {
-	list-style-type: circle;
+	list-style-type: none;
+}
+
+#backToTop {
+	font-size: smaller;
+	text-align: right;
+}
+
+address {
+	font-family: serif;
 }
