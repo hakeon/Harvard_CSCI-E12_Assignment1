@@ -1,0 +1,14 @@
+/*stylesheet for harvard_guide_dce.html*/
+
+a:link {
+	color:black;
+	text-decoration: blink;
+}
+
+a:hover {
+	color: blue;
+}
+
+ul {
+	list-style-type: circle;
+}
