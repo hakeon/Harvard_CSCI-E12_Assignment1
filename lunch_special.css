@@ -1,0 +1,28 @@
+/*stylesheet for Dado Tea Lunch Special*/
+
+html {
+	font-family: cursive;
+	text-shadow: 2px 2px 2px #f9d4d4;
+	text-align: justify;
+	background-color: #f7f2cb;
+}
+
+fieldset {
+	border-color: #f90556;
+}
+
+h1 {
+	text-shadow: 1px 1px 1px #f90556;
+}
+
+.radio, .checkbox {
+	list-style: none;
+}
+
+input[type="text"], input[type="submit"] {
+	background-color: #f9d4d4;
+}
+
+[name="drink"] {
+	background-color: #f9d4d4;
+}
